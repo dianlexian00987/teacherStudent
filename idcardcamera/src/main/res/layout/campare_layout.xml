@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <!--头布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/color_jiang_jie"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        >
+        <ImageView
+            android:id="@+id/iv_dui_bi_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/paizhaoback"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="对比讲解"
+            android:textColor="@color/color_afff"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginLeft="-26dp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_campare_dui_bi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+            <!--画板的布局 背景透明-->
+        <com.wildma.idcardcamera.cropper.PaletteView
+            android:id="@+id/new_color_board_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:visibility="gone"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_bottom_check"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|right"
+
+                >
+                <LinearLayout
+                    android:id="@+id/ll_dui_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="44dp"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_dui_check"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/pizu_check"
+                        />
+                    <TextView
+                        android:id="@+id/tv_dui_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/color_afff"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dui_pi_zu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="44dp"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_dui_pi_zu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/duibi_pizu"
+                        />
+                        />
+                    <TextView
+                        android:id="@+id/tv_dui_pi_zu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="批注"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="@color/color_afff"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dui_cha_ban"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="24dp"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_dui_cha_ban"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/jiang_jie_ban_ca"
+                        />
+                    <TextView
+                        android:id="@+id/tv_dui_cha_ban"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="板擦"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/color_afff"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

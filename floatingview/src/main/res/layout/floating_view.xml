@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    >
+
+    <com.feiyu.floatingview.weight.ShadowLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        app:sl_dx="0dp"
+        app:sl_dy="2dp"
+        app:sl_oval="true"
+        app:sl_shadowColor="#33000000"
+        app:sl_shadowRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:id="@+id/sdv_cover"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                >
+
+            </ImageView>
+
+            <com.feiyu.floatingview.weight.GifView
+                android:id="@+id/gif_float"
+                android:layout_width="16dp"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_start_suo_ping"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="锁屏"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:id="@+id/tv_jing_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="解屏"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="90dp"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="开启屏幕广播"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="130dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="关闭屏幕广播"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="180dp"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </com.feiyu.floatingview.weight.ShadowLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="MyAppTheme" parent="AppTheme">
+        <!--窗口全屏不显示状态栏-->
+        <item name="android:windowFullscreen">true</item>
+        <!--启动app图标透明之前的白屏过程  8.0bug-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+
+</resources>

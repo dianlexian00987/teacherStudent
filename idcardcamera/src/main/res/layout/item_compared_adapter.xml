@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_compared_item"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/iv_compared_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/timg"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <ImageView
+            android:id="@+id/item_dui_bi_xuan_zhuan"
+            android:layout_width="@dimen/y48"
+            android:layout_height="@dimen/y48"
+            android:src="@mipmap/jiang_jie_xuan_zhuan"
+            android:layout_marginRight="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_dui_bi_max"
+            android:layout_width="@dimen/y48"
+            android:layout_height="@dimen/y48"
+            android:src="@mipmap/jiang_fang_da"
+            android:layout_marginRight="16dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

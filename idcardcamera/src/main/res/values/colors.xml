@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="preview_mock">#c60023</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_afff">#fff</color>
+    <color name="color_jiang_jie">#414141</color>
+    <color name="color_pi_zu">#32C5FE</color>
+    <color name="transparent">#00000000</color>
+    <color name="preview_mock_bule">#00BCD4</color>
+    <color name="preview_mock_yellow">#FFFE8432</color>
+    <color name="preview_guan_kong_logo">#FF32C5FE</color>
+    <color name="preview_guan_kong_text">#FF303753</color>
+    <color name="pop_guan_kong_text">#FFB3B9C7</color>
+</resources>

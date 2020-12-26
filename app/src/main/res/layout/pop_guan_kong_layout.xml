@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/ic_pop_guan_kong_item"
+    >
+    <LinearLayout
+        android:id="@+id/ll_guan_long_suo"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+
+        >
+        <ImageView
+            android:id="@+id/iv_guan_long_suo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/start_suo_ping"
+            />
+        <TextView
+            android:id="@+id/tv_guan_long_suo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已锁屏"
+            android:textColor="@color/pop_guan_kong_text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guan_long_chuan"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+
+        >
+        <ImageView
+            android:id="@+id/iv_guan_long_chuan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/jiao_chuan_un_select"
+            />
+        <TextView
+            android:id="@+id/tv_guan_long_chuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教师传屏"
+            android:textColor="@color/pop_guan_kong_text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guan_long_tou"
+        android:layout_width="65dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+
+        >
+        <ImageView
+            android:id="@+id/iv_guan_long_tou"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/xue_sheng_no_tou"
+            />
+        <TextView
+            android:id="@+id/tv_guan_long_tou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生投屏"
+            android:textColor="@color/pop_guan_kong_text"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guan_long_join"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+
+        >
+        <ImageView
+            android:id="@+id/iv_guan_long_join"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/yijian_add_no"
+            />
+        <TextView
+            android:id="@+id/tv_guan_long_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键加入"
+            android:textColor="@color/pop_guan_kong_text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guan_long_close"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+
+        >
+        <ImageView
+            android:id="@+id/iv_guan_long_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/yi_jian_close_no"
+            />
+        <TextView
+            android:id="@+id/tv_guan_long_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键关机"
+            android:textColor="@color/pop_guan_kong_text"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

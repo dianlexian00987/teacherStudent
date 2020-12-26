@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/x100"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ic_pop_window_item"
+        android:id="@+id/ll_guan_kong_count"
+        android:layout_marginTop="@dimen/y40"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="46dp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll__guan_kong_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+
+
+                    >
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@mipmap/guan_kong_check"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tv_guan_kong_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择"
+                        android:textSize="16dp"
+                        android:textColor="@color/preview_guan_kong_text"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_guan_kong_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                android:layout_marginTop="@dimen/x30"
+
+                    >
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@mipmap/guan_long_pain"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tv_guan_kong_pant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="画笔"
+                        android:textSize="16dp"
+                        android:textColor="@color/preview_guan_kong_text"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_guan_kong_ban_ca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/x30"
+                >
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@mipmap/guan_kong_ban_ca"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_guan_kong_ban_ca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="板擦"
+                    android:textSize="16dp"
+                    android:textColor="@color/preview_guan_kong_text"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_guan_kong_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/x30"
+                >
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@mipmap/guan_kong_base"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_guan_kong_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="管控"
+                    android:textSize="16dp"
+                    android:textColor="@color/preview_guan_kong_text"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_suo_ping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="锁屏"
+                android:textSize="16dp"
+                android:textColor="@color/preview_guan_kong_text"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                />
+                <TextView
+                android:id="@+id/tv_ji_ping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="解屏"
+                android:textSize="16dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/preview_guan_kong_text"
+                    android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_start_guang_bo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启广播"
+                android:textSize="16dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/preview_guan_kong_text"
+                />
+
+            <TextView
+                android:id="@+id/tv_stop_guang_bo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭广播"
+                android:textSize="16dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/preview_guan_kong_text"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关机"
+                android:textSize="16dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/color_afff"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_guan_kong_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/guan_kong_logo"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_lu_ping_guan_kong_logo_item"
+
+
+    />
+
+
+
+</FrameLayout>

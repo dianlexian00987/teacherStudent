@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zbv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!--头部布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y130"
+            android:background="@color/colorGray"
+            >
+            <com.telit.app_teacher.weight.CircleImageView
+                android:id="@+id/home_avatar"
+                android:layout_width="@dimen/x103"
+                android:layout_height="@dimen/x103"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_user"
+                zbv:civ_border_color="@android:color/white"
+                android:layout_marginLeft="@dimen/x30"
+                zbv:civ_border_width="@dimen/x4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x34"
+                android:text="张一鸣老师"
+                android:layout_toRightOf="@+id/home_avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="@color/word_gray_deep"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/x500"
+                android:layout_height="@dimen/y80"
+                android:src="@mipmap/logo"
+                android:layout_centerHorizontal="true"
+                />
+
+            <!--右侧的图标-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_alignParentRight="true"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_check_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@mipmap/check_class"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/wenhao"
+                        android:layout_marginRight="@dimen/x18"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_check_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/practice_text_color"
+                        android:textSize="@dimen/x28"
+                        android:text="请选择授课班级"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/xiaojiantou"
+                        android:layout_marginLeft="@dimen/x18"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/rt_start_lesson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始授课"
+                    android:textColor="@color/word_white"
+                    android:textSize="@dimen/x30"
+                    android:background="@mipmap/tongping"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <!--中间的类容-->
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_home_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--画板的布局-->
+
+    <!--画板的布局 背景透明-->
+    <com.wildma.idcardcamera.cropper.PaletteView
+        android:id="@+id/new_color_board_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="gone"
+        />
+
+
+</FrameLayout>

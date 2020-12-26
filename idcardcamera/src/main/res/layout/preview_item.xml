@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:id="@+id/iv_itemimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/take_photo_normal"/>
+
+    <ImageView
+        android:id="@+id/item_full_xuan_zhuan"
+        android:layout_width="@dimen/y58"
+        android:layout_height="@dimen/y58"
+        android:src="@mipmap/jiang_jie_xuan_zhuan"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
